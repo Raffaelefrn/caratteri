@@ -6,9 +6,8 @@ int main()
 
   while ( (c=getchar()) != EOF) {
 putchar(c);
-if (c!=' '){
-conta++;}
-  }
+
+conta++;}  
 printf("\nConta caratteri= %d\n",conta);
   return 0;
 }
