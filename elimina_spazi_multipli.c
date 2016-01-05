@@ -2,24 +2,20 @@
 
 int main()
 {
-  int c, conta = 0;
+  int c,conta=0;
 
-  while ( (c=getchar())!=EOF ) {
-    if (c==' ') {
-      conta++;
-    }
-    
-    if (conta==2) {
-      c = 0;
-      conta = 1;
-    }
-    
-    if ( (c!=' ') && (c!=0) ) {
-      conta = 0;
-    }
-    
-    putchar(c);
-  }
+  while ( (c=getchar()) != EOF) {
+if (((c==' ')||(c!=' '))&&(conta<2)){
 
-  return 0;
+if (c!=' '){putchar(c);}
+else {conta++;}
+if((c==' ')&&(conta==1)){putchar(c);}
+
+
+}
+if (conta==2){conta=1;}
+if ((c!=' ')&&(c!=0)){conta=0;}
+}
+
+return 0;
 }
