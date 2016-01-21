@@ -14,10 +14,12 @@ int main()
     } else if (c=='*' && stato==slash) {
       stato=asterisco;
     }
-if(stato==testo){putchar(c);}
-if(c=='/' && stato==asterisco){stato=testo;}
-
-
+    if(stato==testo){
+      putchar(c);
+    }
+    if(c=='/' && stato==asterisco){
+     stato=testo;
+    }
 }
 return 0;
 }
